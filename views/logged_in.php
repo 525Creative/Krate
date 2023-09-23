@@ -5,7 +5,7 @@
     
     <div class="content">
         <header>
-            <h3>KRATE</h3>
+            <h3>KRATES</h3>
         </header>
         <div class="open isClosed">
             <i class="fa fa-bars font rotate"></i>

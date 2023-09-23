@@ -1,7 +1,6 @@
 <?php
-  // Define database connection constants
-  define('DB_HOST', 'localhost');
-  define('DB_USER', 'root');
-  define('DB_PASSWORD', 'root');
-  define('DB_NAME', 'jabase');
+const DB_HOST = 'localhost';
+const DB_USER = 'root';
+const DB_PASSWORD = 'root';
+const DB_NAME = 'jabase';
 ?>

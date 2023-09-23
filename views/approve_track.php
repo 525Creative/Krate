@@ -41,7 +41,7 @@
                       // Connect to the database
                       $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); 
 
-                      // Approve the rating by setting the approved column in the database
+                      // Approve the rating by setting the approved colu    mn in the database
                       $query = "UPDATE tracks SET approved = 1 WHERE id = $id";
                       mysqli_query($dbc, $query);
                       mysqli_close($dbc);
