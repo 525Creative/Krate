@@ -1,0 +1,562 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$shadow: rgba(0, 0, 0, .2);
+$margin:10px;
+
+// Colors
+
+$green: rgba(112, 185, 156, .9);
+$beige: rgba(255, 233, 199, 1);
+$red: rgba(255, 91, 91, .8);
+$grey: rgba(84, 84, 84, .7);
+$charcoal: rgba(45, 45, 47, 1);
+
+
+@-webkit-viewport {width: device-width;}
+@-moz-viewport {width: device-width;}
+@-ms-viewport {width: device-width;}
+@-o-viewport {width: device-width;}
+@viewport {width: device-width;}
+
+html {
+  overflow-x: hidden;
+  font-size: 100%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: green;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+}
+body{
+	// background-color: #fff;
+	background-image:url('../css/shattered.png');
+	.logged-out-h2{
+		//background-color: #c3c3c3;
+		text-align:center;
+		margin:0;
+		padding-top:20px;
+		margin-top:20px;
+		margin-bottom:10px;
+	}
+	.not-logged-in{;
+		form{
+			width:270px;
+			margin:20px auto;
+			padding:20px;
+			background-color: #eee;
+			padding-top:25px;
+			padding-bottom:10px;
+			label, input[type="text"], input[type="email"], input[type="submit"], input[type="password"]{
+				display:block;
+				width: 80%;
+				margin:0 auto;
+			}
+			input[type="text"], input[type="email"], input[type="submit"], input[type="password"]{
+				height:35px;
+				margin-bottom:15px;
+				width: 83%;
+				padding-left:10px;
+			}
+		}
+		.register-link{
+			text-align:center;
+			display:block;
+			color:#000;
+			width:160px;
+			padding:15px;
+			margin:10px auto;
+			text-decoration:none;
+			background-color:$green;
+		}
+	}
+	.registration{
+		background-color:#fff;
+		display:block;
+		width:270px;
+		margin:20px auto;
+		padding:20px;
+		background-image:url('../css/shattered.png');
+		form{
+			background-color: #eee;
+			padding-top:25px;
+			padding-bottom:10px;
+			label, input[type="text"], input[type="email"], input[type="submit"], input[type="password"]{
+				display:block;
+				width: 80%;
+				margin:0 auto;
+			}
+			input[type="text"], input[type="email"], input[type="submit"], input[type="password"]{
+				height:35px;
+				margin-bottom:15px;
+				width: 84%;
+			}
+		}
+		a{
+			text-align:center;
+			display:block;
+			margin-top:10px;
+			text-decoration:none;
+		}
+	}
+	.wrapper{
+		background-color:yellow;
+		display: block;
+		top:0;
+	    left:0;
+	    width:100%;
+	    height:100%;
+	}
+}
+aside{
+	display:block;
+	position: fixed;
+	z-index: 1;
+	width:280px;
+	height:100%;
+	background-image:url('../css/shattered.png');
+	overflow:hidden;
+	header{
+		background-color:$grey;
+		width: 100%;
+		height: 50px;
+		.menu-header{
+			float:left;
+			height: 50px;
+			.fa{
+				margin:8px 15px;
+				font-size:2.2em;
+				display:inline-block;
+				float:left;
+			}
+			h3{
+				display:block;
+				float:left;
+				font-size:1.2em;
+				height: 25px;
+				margin-top:13px;
+				margin-left:0px;
+			}
+		}
+	}
+	.welcome-message{
+		background-color:$green;
+		box-sizing: border-box;
+		padding:5px;
+		height:50px;
+		line-height:30px;
+		p{
+			margin:5px;
+			.user-name{
+    			text-transform: uppercase;
+			}
+		}
+	}
+	section{
+		ul{
+			margin:0;
+			padding:0;
+			a:link, a:visited, a:hover, a:active{
+				text-decoration:none;
+				color:$grey;
+			}
+			.fa{
+				font-size:1em;
+				display:inline-block;
+				width: 50px;
+				line-height: 50px;
+				text-align:center;
+			}
+			li{
+				list-style-type: none;
+				display:inline-block;
+				border-bottom:solid thin $green;
+				padding:0;
+				width:100%;
+				line-height: 50px;
+				input[type="text"]{
+					display: block;
+					width: 80%;
+					height: 35px;
+					margin:5px auto;
+					padding-left:10px;
+				}
+			}
+		}
+	}
+}	
+.content{
+	display:block;
+	background-color: white;
+	position: absolute;
+	margin:0;
+	z-index: 10;
+	overflow: auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	text-align:center;
+	box-shadow: -10px -7px 10px $shadow;
+	background-image:url('../css/shattered.png');
+	header{
+		background-color:$grey;
+		color:$green;
+		margin:0;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		margin-top:-20px;
+	}
+	.open{
+		font-size:2em;
+		line-height: 50px;
+		height: 50px;
+		width:50px;
+		margin-top:-50px;
+	}
+	section{
+		margin:0;
+		padding:0;
+		text-align:left;
+		.billboard{
+			width: 500px;
+			margin: 0 auto;
+			#top-score{
+				width: 100%;
+				text-align: center;
+				display: block;
+				border-top: solid thin #eee;
+				border-bottom: solid thin #eee;
+				line-height: 50px;
+				margin-bottom: 20px;
+			}
+			.table{
+				width: 500px;
+				display: block;
+				margin: 20px auto;
+				.coverart{
+					display: block;
+					margin: 20px auto;
+					width: 100%;
+				}
+				.track-info{
+					background-color: $green;
+					text-align: left;
+					width:480px;
+					margin-top: -20px;
+					padding: 10px;
+					h1,h3{
+						line-height: 20px;
+						margin-left:20px;
+					}
+					h1{
+						margin-left:10px;
+						padding-bottom:10px;
+					}
+				}
+			}
+		}
+		.add-track{
+			display: block;
+			width: 500px;
+			margin:20px auto;
+			h2{
+				background-color:$green;
+				padding:10px 0;
+				text-align:center;
+			}
+			h3{
+				text-align:center;
+			}
+			.error{
+				background-color:$red;
+				padding:10px;
+				text-align:center;
+				font-size:1.4em;
+			}
+			.confirm{
+				width:280px;
+				display:block;
+				margin:0 auto;
+				img{
+					width:100%;
+					margin-bottom:10px;
+				}
+				a{
+					text-align:center;
+					text-decoration:none;
+					padding:10px 20px;
+					display:block;
+					background-color:$green;
+					width:50%;
+					margin:0 auto;
+					color:#000;
+				}
+			}
+			h3{
+				text-align: center;
+			}
+			form{
+				width:280px;
+				margin:0 auto;
+				input, input[type="text"]{
+					display: block;
+					width: 265px;
+					height: 35px;
+					margin:0;
+					padding-left:10px;
+				}
+				.coverart-label{
+					display: block;
+					text-align: center;
+					margin-top: -10px;
+					margin-bottom: 15px;
+				}
+				hr{
+					margin-bottom:20px;
+				}
+				input[type="submit"]{
+					width: 80%;
+					height: 35px;
+					margin:0 auto;
+				}
+			}
+		}
+		.admin{
+			width: 700px;
+			padding: 10px;
+			padding-left:20px;
+			padding-right:20px;
+			display: block;
+			margin:0 auto;
+			.fa{
+				margin-right: 10px;
+			}
+			h1{
+				text-align:center;
+			}
+			#data-table{
+				margin:0 auto;
+				tbody{
+					display:inline-block;
+					width:100%;
+					tr{
+						margin-bottom: 10px;
+						padding-bottom: 10px;
+						td{
+							border:solid thin #eee;
+							line-height: 1.8em;
+							padding: 5px;
+							.remove{
+								color:$red;
+							}
+							.divider{
+								margin:0 5px;
+							}
+							.approve{
+								color:$green;
+							}
+							a{
+								text-decoration:none;
+								i{
+									margin-right:5px;
+								}
+							}
+						}
+					}
+					tr:nth-child(even){
+						background-color: #eee;
+					}
+				}
+			}
+		}
+		.approve-track{
+			display: block;
+			width: 500px;
+			margin:20px auto;
+			.error{
+				background-color:$red;
+				padding:10px;
+			}
+			.success{
+				background-color:$green;
+			}
+			h2{
+				background-color:$red;
+				padding:10px 0;
+				text-align:center;
+			}
+			.confirm-approve{
+				width:280px;
+				display:block;
+				margin:0 auto;
+				img{
+					width:100%;
+					margin-bottom:10px;
+				}
+				p{
+					margin:10px 0;
+				}
+				form{
+					.radio-buttons{
+						display:block;
+						text-align:center;
+					}
+					input[type="submit"]{
+						display:block;
+						width:100%;
+						height:40px;
+						margin:12px auto 0;
+					}
+				}
+				a{
+					background-color:$red;
+					text-align:center;
+					color:#000;
+					display:block;
+					margin:0 auto;
+					text-decoration:none;
+					padding:10px;
+					.back-home{
+						margin-right:5px;
+					}
+				}
+			}
+			.back-home{
+				text-align: center;	
+			}
+		}
+	}
+}
+.remove-track{
+	display: block;
+	width: 500px;
+	margin:20px auto;
+	.error{
+		background-color:$red;
+		padding:10px;
+	}
+	.success{
+		background-color:$green;
+	}
+	h2{
+		background-color:$red;
+		padding:10px 0;
+		text-align:center;
+	}
+	.confirm-removal{
+		width:280px;
+		display:block;
+		margin:0 auto;
+		img{
+			width:100%;
+			margin-bottom:10px;
+		}
+		p{
+			margin:10px 0;
+		}
+		form{
+			.radio-buttons{
+				display:block;
+				text-align:center;
+			}
+			input[type="submit"]{
+				display:block;
+				width:100%;
+				height:40px;
+				margin:12px auto 0;
+			}
+		}
+		a{
+			background-color:$red;
+			text-align:center;
+			color:#000;
+			display:block;
+			margin:0 auto;
+			text-decoration:none;
+			padding:10px;
+			.back-home{
+				margin-right:5px;
+			}
+		}
+	}
+}
+.app-button{
+	display:block;
+	width: 80px;
+	height: 80px;
+	margin-left: 20px;
+}
+.font{
+	z-index:70;
+	margin:$margin;
+}
+.logged-out{
+	display:block;
+	width:500px;
+	margin:20px auto;
+	background-color:$red;
+	text-align:center;
+	padding:0;
+	font-weight:bold;
+	font-size:1.4em;
+}
+.bpm{
+	margin-left:10px;
+}
+
+/*  480px breakpoint  */
+@media only screen and (min-width: 30em) {
+  body {
+    //background: orange;
+    section{
+			ul{
+				.fa{
+					line-height: 50px;
+				}
+				li{
+					line-height: 45px;
+				}
+			}
+		}
+
+    } 
+}
+
+/*  600px breakpoint  */
+@media only screen and (min-width: 38em) {
+	body {
+    	//background: purple; 
+	} 
+}
+
+/*  768px breakpoint  */
+@media only screen and (min-width: 48em) {
+	body {
+    	//background: yellow; 
+    } 
+}
+
+/*  992px breakpoint  */
+@media only screen and (min-width: 62em) {
+	body {
+    	// background: red; 
+    } 
+}
+
+/*  1382px breakpoint  */
+@media only screen and (min-width: 86em) {
+	body {
+    	// background: green;
+    	max-width: 1440px;
+    } 
+}
+
+/*  high pixel ratio  */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+	body {
+    	//background: blue; 
+    } 
+}
