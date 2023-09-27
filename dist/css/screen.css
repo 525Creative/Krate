@@ -1,6 +1,3 @@
-@viewport {
-  width: device-width;
-}
 html {
   overflow-x: hidden;
   font-size: 100%;
@@ -23,10 +20,8 @@ body {
 .not-logged-in form {
   width: 270px;
   margin: 20px auto;
-  padding: 20px;
   background-color: #eee;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  padding: 25px 20px 10px;
 }
 .not-logged-in form label, .not-logged-in form input[type=text], .not-logged-in form input[type=email], .not-logged-in form input[type=submit], .not-logged-in form input[type=password] {
   display: block;
@@ -80,15 +75,6 @@ body {
   text-decoration: none;
 }
 
-.wrapper {
-  background-color: yellow;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 aside {
   display: block;
   z-index: 1;
@@ -102,23 +88,23 @@ aside header {
   width: 100%;
   height: 50px;
 }
-aside header .menu-header {
+aside .menu-header {
   float: left;
   height: 50px;
 }
-aside header .menu-header .fa {
+aside .fa {
   margin: 8px 15px;
   font-size: 2.2em;
   display: inline-block;
   float: left;
 }
-aside header .menu-header h3 {
+aside h3 {
   display: block;
   float: left;
   font-size: 1.2em;
   height: 25px;
   margin-top: 13px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 aside .welcome-message {
   background-color: rgba(112, 185, 156, 0.9);
@@ -144,8 +130,8 @@ aside section ul a:link, aside section ul a:visited, aside section ul a:hover, a
 aside section ul .fa {
   font-size: 1em;
   display: inline-block;
-  width: 50px;
-  line-height: 50px;
+  width: 20px;
+  line-height: 34px;
   text-align: center;
 }
 aside section ul li {
@@ -182,11 +168,9 @@ aside section ul li input[type=text] {
 .content header {
   background-color: rgba(84, 84, 84, 0.7);
   color: rgba(112, 185, 156, 0.9);
-  margin: 0;
   width: 100%;
   height: 50px;
   line-height: 50px;
-  margin-top: -20px;
 }
 .content .open {
   font-size: 2em;
@@ -213,28 +197,21 @@ aside section ul li input[type=text] {
   line-height: 50px;
   margin-bottom: 20px;
 }
-.content section .billboard .table {
-  width: 500px;
+.content section .billboard .coverart {
   display: block;
-  margin: 20px auto;
-}
-.content section .billboard .table .coverart {
-  display: block;
-  margin: 20px auto;
+  margin: 20px auto 0;
   width: 100%;
 }
-.content section .billboard .table .track-info {
+.content section .billboard .track-info {
   background-color: rgba(112, 185, 156, 0.9);
   text-align: left;
-  width: 480px;
-  margin-top: -20px;
   padding: 10px;
 }
-.content section .billboard .table .track-info h1, .content section .billboard .table .track-info h3 {
+.content section .billboard .track-info h1, .content section .billboard .track-info h3 {
   line-height: 20px;
   margin-left: 20px;
 }
-.content section .billboard .table .track-info h1 {
+.content section .billboard .track-info h1 {
   margin-left: 10px;
   padding-bottom: 10px;
 }
@@ -306,9 +283,7 @@ aside section ul li input[type=text] {
 }
 .content section .admin {
   width: 700px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
   display: block;
   margin: 0 auto;
 }
@@ -482,19 +457,7 @@ aside section ul li input[type=text] {
   font-size: 1.4em;
 }
 
-.bpm {
-  margin-left: 10px;
-}
-
 /*  480px breakpoint  */
-@media only screen and (min-width: 30em) {
-  body section ul .fa {
-    line-height: 50px;
-  }
-  body section ul li {
-    line-height: 45px;
-  }
-}
 /*  600px breakpoint  */
 /*  768px breakpoint  */
 /*  992px breakpoint  */

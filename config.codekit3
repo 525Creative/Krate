@@ -596,6 +596,14 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/functions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/functions.php",
+      "oF" : 0
+    },
     "\/images\/Adele.jpg" : {
       "ft" : 16384,
       "iS" : 29119,
@@ -1310,14 +1318,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/register.php",
-      "oF" : 0
-    },
-    "\/removescore.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dist\/removescore.php",
       "oF" : 0
     },
     "\/sql\/jabase.sql" : {
